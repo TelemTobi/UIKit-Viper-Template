@@ -24,6 +24,22 @@
 		7D2EF9422AF4D82200497BD8 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF93C2AF4D82200497BD8 /* MainScreenViewController.swift */; };
 		7D2EF9432AF4D82200497BD8 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF93D2AF4D82200497BD8 /* MainScreenInteractor.swift */; };
 		7D2EF9442AF4D82200497BD8 /* MainScreenWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF93E2AF4D82200497BD8 /* MainScreenWireframe.swift */; };
+		7D2EF9562AF4D8AF00497BD8 /* Authenticating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9462AF4D8AE00497BD8 /* Authenticating.swift */; };
+		7D2EF9572AF4D8AF00497BD8 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9472AF4D8AE00497BD8 /* Networking.swift */; };
+		7D2EF9582AF4D8AF00497BD8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9482AF4D8AE00497BD8 /* NetworkManager.swift */; };
+		7D2EF9592AF4D8AF00497BD8 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF94A2AF4D8AE00497BD8 /* APIError.swift */; };
+		7D2EF95A2AF4D8AF00497BD8 /* Errorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF94B2AF4D8AE00497BD8 /* Errorable.swift */; };
+		7D2EF95B2AF4D8AF00497BD8 /* PredefinedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF94C2AF4D8AE00497BD8 /* PredefinedError.swift */; };
+		7D2EF95C2AF4D8AF00497BD8 /* SomeAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF94E2AF4D8AE00497BD8 /* SomeAuthenticator.swift */; };
+		7D2EF95D2AF4D8AF00497BD8 /* JsonResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9502AF4D8AE00497BD8 /* JsonResolver.swift */; };
+		7D2EF95E2AF4D8AF00497BD8 /* NetworkManager+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9512AF4D8AE00497BD8 /* NetworkManager+Debug.swift */; };
+		7D2EF95F2AF4D8AF00497BD8 /* DataProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9532AF4D8AE00497BD8 /* DataProviders.swift */; };
+		7D2EF9602AF4D8AF00497BD8 /* DataProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9542AF4D8AE00497BD8 /* DataProviding.swift */; };
+		7D2EF9612AF4D8AF00497BD8 /* TargetEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9552AF4D8AE00497BD8 /* TargetEndPoint.swift */; };
+		7D2EF9642AF4D90200497BD8 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 7D2EF9632AF4D90200497BD8 /* CombineMoya */; };
+		7D2EF9662AF4D90200497BD8 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7D2EF9652AF4D90200497BD8 /* Moya */; };
+		7D2EF9682AF4D90200497BD8 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 7D2EF9672AF4D90200497BD8 /* ReactiveMoya */; };
+		7D2EF96A2AF4D90200497BD8 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 7D2EF9692AF4D90200497BD8 /* RxMoya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +62,18 @@
 		7D2EF93C2AF4D82200497BD8 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		7D2EF93D2AF4D82200497BD8 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
 		7D2EF93E2AF4D82200497BD8 /* MainScreenWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenWireframe.swift; sourceTree = "<group>"; };
+		7D2EF9462AF4D8AE00497BD8 /* Authenticating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticating.swift; sourceTree = "<group>"; };
+		7D2EF9472AF4D8AE00497BD8 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		7D2EF9482AF4D8AE00497BD8 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7D2EF94A2AF4D8AE00497BD8 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		7D2EF94B2AF4D8AE00497BD8 /* Errorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errorable.swift; sourceTree = "<group>"; };
+		7D2EF94C2AF4D8AE00497BD8 /* PredefinedError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredefinedError.swift; sourceTree = "<group>"; };
+		7D2EF94E2AF4D8AE00497BD8 /* SomeAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeAuthenticator.swift; sourceTree = "<group>"; };
+		7D2EF9502AF4D8AE00497BD8 /* JsonResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonResolver.swift; sourceTree = "<group>"; };
+		7D2EF9512AF4D8AE00497BD8 /* NetworkManager+Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NetworkManager+Debug.swift"; sourceTree = "<group>"; };
+		7D2EF9532AF4D8AE00497BD8 /* DataProviders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviders.swift; sourceTree = "<group>"; };
+		7D2EF9542AF4D8AE00497BD8 /* DataProviding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviding.swift; sourceTree = "<group>"; };
+		7D2EF9552AF4D8AE00497BD8 /* TargetEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetEndPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +81,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2EF9662AF4D90200497BD8 /* Moya in Frameworks */,
+				7D2EF9642AF4D90200497BD8 /* CombineMoya in Frameworks */,
+				7D2EF96A2AF4D90200497BD8 /* RxMoya in Frameworks */,
+				7D2EF9682AF4D90200497BD8 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +113,7 @@
 				7D2EF9132AF4D29F00497BD8 /* Base */,
 				7D2EF9142AF4D2AE00497BD8 /* Model */,
 				7D2EF9152AF4D2B900497BD8 /* Module */,
+				7D2EF9452AF4D8AE00497BD8 /* Networking */,
 				7D2EF9162AF4D2BF00497BD8 /* Services */,
 				7D2EF9172AF4D2C700497BD8 /* Support */,
 				7D2EF9182AF4D2CE00497BD8 /* Utility */,
@@ -196,6 +229,57 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7D2EF9452AF4D8AE00497BD8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF9462AF4D8AE00497BD8 /* Authenticating.swift */,
+				7D2EF9472AF4D8AE00497BD8 /* Networking.swift */,
+				7D2EF9482AF4D8AE00497BD8 /* NetworkManager.swift */,
+				7D2EF9492AF4D8AE00497BD8 /* Errors */,
+				7D2EF94D2AF4D8AE00497BD8 /* Authenticators */,
+				7D2EF94F2AF4D8AE00497BD8 /* JsonResolver */,
+				7D2EF9512AF4D8AE00497BD8 /* NetworkManager+Debug.swift */,
+				7D2EF9522AF4D8AE00497BD8 /* Data Providers */,
+				7D2EF9552AF4D8AE00497BD8 /* TargetEndPoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7D2EF9492AF4D8AE00497BD8 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF94A2AF4D8AE00497BD8 /* APIError.swift */,
+				7D2EF94B2AF4D8AE00497BD8 /* Errorable.swift */,
+				7D2EF94C2AF4D8AE00497BD8 /* PredefinedError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		7D2EF94D2AF4D8AE00497BD8 /* Authenticators */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF94E2AF4D8AE00497BD8 /* SomeAuthenticator.swift */,
+			);
+			path = Authenticators;
+			sourceTree = "<group>";
+		};
+		7D2EF94F2AF4D8AE00497BD8 /* JsonResolver */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF9502AF4D8AE00497BD8 /* JsonResolver.swift */,
+			);
+			path = JsonResolver;
+			sourceTree = "<group>";
+		};
+		7D2EF9522AF4D8AE00497BD8 /* Data Providers */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF9532AF4D8AE00497BD8 /* DataProviders.swift */,
+				7D2EF9542AF4D8AE00497BD8 /* DataProviding.swift */,
+			);
+			path = "Data Providers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,6 +296,12 @@
 			dependencies = (
 			);
 			name = "UIKit-Viper-Template";
+			packageProductDependencies = (
+				7D2EF9632AF4D90200497BD8 /* CombineMoya */,
+				7D2EF9652AF4D90200497BD8 /* Moya */,
+				7D2EF9672AF4D90200497BD8 /* ReactiveMoya */,
+				7D2EF9692AF4D90200497BD8 /* RxMoya */,
+			);
 			productName = "UIKit-Viper-Template";
 			productReference = 7D2EF8FC2AF4593F00497BD8 /* UIKit-Viper-Template.app */;
 			productType = "com.apple.product-type.application";
@@ -240,6 +330,9 @@
 				Base,
 			);
 			mainGroup = 7D2EF8F32AF4593F00497BD8;
+			packageReferences = (
+				7D2EF9622AF4D90200497BD8 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 7D2EF8FD2AF4593F00497BD8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,20 +360,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2EF9562AF4D8AF00497BD8 /* Authenticating.swift in Sources */,
 				7D2EF9272AF4D3FD00497BD8 /* Services.swift in Sources */,
 				7D2EF9432AF4D82200497BD8 /* MainScreenInteractor.swift in Sources */,
+				7D2EF9572AF4D8AF00497BD8 /* Networking.swift in Sources */,
 				7D2EF9002AF4593F00497BD8 /* AppDelegate.swift in Sources */,
+				7D2EF9602AF4D8AF00497BD8 /* DataProviding.swift in Sources */,
 				7D2EF9022AF4593F00497BD8 /* SceneDelegate.swift in Sources */,
+				7D2EF95F2AF4D8AF00497BD8 /* DataProviders.swift in Sources */,
+				7D2EF95E2AF4D8AF00497BD8 /* NetworkManager+Debug.swift in Sources */,
 				7D2EF9262AF4D3FD00497BD8 /* Interactor.swift in Sources */,
 				7D2EF9442AF4D82200497BD8 /* MainScreenWireframe.swift in Sources */,
+				7D2EF95B2AF4D8AF00497BD8 /* PredefinedError.swift in Sources */,
 				7D2EF92A2AF4D3FD00497BD8 /* AppCoordinator.swift in Sources */,
 				7D2EF9422AF4D82200497BD8 /* MainScreenViewController.swift in Sources */,
+				7D2EF9582AF4D8AF00497BD8 /* NetworkManager.swift in Sources */,
 				7D2EF92C2AF4D40E00497BD8 /* AppController.swift in Sources */,
+				7D2EF95C2AF4D8AF00497BD8 /* SomeAuthenticator.swift in Sources */,
+				7D2EF9612AF4D8AF00497BD8 /* TargetEndPoint.swift in Sources */,
+				7D2EF95A2AF4D8AF00497BD8 /* Errorable.swift in Sources */,
+				7D2EF95D2AF4D8AF00497BD8 /* JsonResolver.swift in Sources */,
 				7D2EF9202AF4D3A300497BD8 /* Coordinator.swift in Sources */,
 				7D2EF9402AF4D82200497BD8 /* MainScreenRouter.swift in Sources */,
 				7D2EF9282AF4D3FD00497BD8 /* Constants.swift in Sources */,
 				7D2EF9292AF4D3FD00497BD8 /* AppData.swift in Sources */,
 				7D2EF93F2AF4D82200497BD8 /* MainScreenPresenter.swift in Sources */,
+				7D2EF9592AF4D8AF00497BD8 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +531,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 765F9357QN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "UIKit-Viper-Template/Info.plist";
+				INFOPLIST_FILE = "UIKit-Viper-Template/Support/AppConfig/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -454,7 +559,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 765F9357QN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "UIKit-Viper-Template/Info.plist";
+				INFOPLIST_FILE = "UIKit-Viper-Template/Support/AppConfig/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -495,6 +600,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D2EF9622AF4D90200497BD8 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D2EF9632AF4D90200497BD8 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D2EF9622AF4D90200497BD8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		7D2EF9652AF4D90200497BD8 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D2EF9622AF4D90200497BD8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		7D2EF9672AF4D90200497BD8 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D2EF9622AF4D90200497BD8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		7D2EF9692AF4D90200497BD8 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D2EF9622AF4D90200497BD8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D2EF8F42AF4593F00497BD8 /* Project object */;
 }
