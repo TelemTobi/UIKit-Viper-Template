@@ -19,7 +19,9 @@ class AppCoordinator: Coordinator, MainScreenRouter {
     }
     
     func start() {
-        // TODO: Present mainScreen
+        let navigationController = UINavigationController(rootViewController: mainScreenViewController)
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
     }
     
     func finish() {
@@ -29,10 +31,10 @@ class AppCoordinator: Coordinator, MainScreenRouter {
     
     // MARK: - Main Screen
     
-//    @MainActor
-//    private var mainScreenView: MainViewController {
-//        let interactor = MainScreenInteractor(interactable: interactable)
-//        let view = MainScreenWireframe.makeView(interactor: interactor, router: self)
-//        return view
-//    }
+    private var mainScreenViewController: UIViewController {
+        let interactor = MainScreenInteractor(interactable: interactable)
+        let viewController = MainScreenWireframe.makeViewController()
+        MainScreenWireframe.prepare(viewController, interactor: interactor, router: self)
+        return viewController
+    }
 }
