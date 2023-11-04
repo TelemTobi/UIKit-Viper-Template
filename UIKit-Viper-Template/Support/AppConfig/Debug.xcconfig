@@ -1,0 +1,8 @@
+//
+//  Debug.xcconfig
+//  UIKit-Viper-Template
+//
+//  Created by Telem Tobi on 03/11/2023
+//
+
+SOME_API_BASE_URL = https:/$()/yourDebugUrl.com

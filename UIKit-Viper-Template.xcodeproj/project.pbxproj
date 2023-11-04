@@ -59,6 +59,9 @@
 		7D2EF9922AF627DA00497BD8 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF98F2AF627DA00497BD8 /* UITableViewCell+Extension.swift */; };
 		7D2EF9932AF627DA00497BD8 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9902AF627DA00497BD8 /* UITableView+Extension.swift */; };
 		7D2EF9942AF627DA00497BD8 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9912AF627DA00497BD8 /* UITextField+Extension.swift */; };
+		7D2EF9962AF6722A00497BD8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9952AF6722A00497BD8 /* Config.swift */; };
+		7D2EF9992AF6724000497BD8 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7D2EF9972AF6724000497BD8 /* Debug.xcconfig */; };
+		7D2EF99A2AF6724000497BD8 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 7D2EF9982AF6724000497BD8 /* Release.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +115,9 @@
 		7D2EF98F2AF627DA00497BD8 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		7D2EF9902AF627DA00497BD8 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		7D2EF9912AF627DA00497BD8 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		7D2EF9952AF6722A00497BD8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		7D2EF9972AF6724000497BD8 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		7D2EF9982AF6724000497BD8 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +236,9 @@
 			isa = PBXGroup;
 			children = (
 				7D2EF90D2AF4594000497BD8 /* Info.plist */,
+				7D2EF9952AF6722A00497BD8 /* Config.swift */,
+				7D2EF9972AF6724000497BD8 /* Debug.xcconfig */,
+				7D2EF9982AF6724000497BD8 /* Release.xcconfig */,
 			);
 			path = AppConfig;
 			sourceTree = "<group>";
@@ -436,9 +445,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2EF9992AF6724000497BD8 /* Debug.xcconfig in Resources */,
 				7D2EF90C2AF4594000497BD8 /* LaunchScreen.storyboard in Resources */,
 				7D2EF9412AF4D82200497BD8 /* MainScreenViewController.storyboard in Resources */,
 				7D2EF9092AF4594000497BD8 /* Assets.xcassets in Resources */,
+				7D2EF99A2AF6724000497BD8 /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +501,7 @@
 				7D2EF97D2AF52B9800497BD8 /* Encodable+Extension.swift in Sources */,
 				7D2EF9402AF4D82200497BD8 /* MainScreenRouter.swift in Sources */,
 				7D2EF9282AF4D3FD00497BD8 /* Constants.swift in Sources */,
+				7D2EF9962AF6722A00497BD8 /* Config.swift in Sources */,
 				7D2EF9292AF4D3FD00497BD8 /* AppData.swift in Sources */,
 				7D2EF97B2AF52B9800497BD8 /* Date+Extension.swift in Sources */,
 				7D2EF93F2AF4D82200497BD8 /* MainScreenPresenter.swift in Sources */,
@@ -513,6 +525,7 @@
 /* Begin XCBuildConfiguration section */
 		7D2EF90E2AF4594000497BD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D2EF9972AF6724000497BD8 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -576,6 +589,7 @@
 		};
 		7D2EF90F2AF4594000497BD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D2EF9982AF6724000497BD8 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -632,6 +646,7 @@
 		};
 		7D2EF9112AF4594000497BD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D2EF9972AF6724000497BD8 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -659,6 +674,7 @@
 		};
 		7D2EF9122AF4594000497BD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D2EF9982AF6724000497BD8 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
