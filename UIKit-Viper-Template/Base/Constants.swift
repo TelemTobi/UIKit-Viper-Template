@@ -5,7 +5,7 @@
 //  Created by Telem Tobi on 03/11/2023.
 //
 
-import SwiftUI
+import Foundation
 
 // MARK: -  Typealias
 

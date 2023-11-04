@@ -52,6 +52,10 @@
 		7D2EF9832AF52B9800497BD8 /* UIImage+BlurHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9762AF52B9800497BD8 /* UIImage+BlurHash.swift */; };
 		7D2EF9842AF52B9800497BD8 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9772AF52B9800497BD8 /* UINavigationController+Extension.swift */; };
 		7D2EF9852AF52B9800497BD8 /* Response+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9792AF52B9800497BD8 /* Response+Extension.swift */; };
+		7D2EF9882AF6262100497BD8 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9872AF6262100497BD8 /* Mocks.swift */; };
+		7D2EF98A2AF6263200497BD8 /* DemoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF9892AF6263200497BD8 /* DemoService.swift */; };
+		7D2EF98C2AF6264100497BD8 /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF98B2AF6264100497BD8 /* DemoModel.swift */; };
+		7D2EF98E2AF6272100497BD8 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2EF98D2AF6272100497BD8 /* DemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +102,10 @@
 		7D2EF9762AF52B9800497BD8 /* UIImage+BlurHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+BlurHash.swift"; sourceTree = "<group>"; };
 		7D2EF9772AF52B9800497BD8 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		7D2EF9792AF52B9800497BD8 /* Response+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Extension.swift"; sourceTree = "<group>"; };
+		7D2EF9872AF6262100497BD8 /* Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		7D2EF9892AF6263200497BD8 /* DemoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoService.swift; sourceTree = "<group>"; };
+		7D2EF98B2AF6264100497BD8 /* DemoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
+		7D2EF98D2AF6272100497BD8 /* DemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +172,7 @@
 		7D2EF9142AF4D2AE00497BD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7D2EF98B2AF6264100497BD8 /* DemoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +188,7 @@
 		7D2EF9162AF4D2BF00497BD8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7D2EF9892AF6263200497BD8 /* DemoService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -186,8 +196,9 @@
 		7D2EF9172AF4D2C700497BD8 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				7D2EF91B2AF4D32C00497BD8 /* Resources */,
 				7D2EF91A2AF4D2F400497BD8 /* AppConfig */,
+				7D2EF9862AF6262100497BD8 /* Mocks */,
+				7D2EF91B2AF4D32C00497BD8 /* Resources */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 		7D2EF9192AF4D2D500497BD8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7D2EF98D2AF6272100497BD8 /* DemoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,12 +274,12 @@
 				7D2EF9462AF4D8AE00497BD8 /* Authenticating.swift */,
 				7D2EF9472AF4D8AE00497BD8 /* Networking.swift */,
 				7D2EF9482AF4D8AE00497BD8 /* NetworkManager.swift */,
-				7D2EF9492AF4D8AE00497BD8 /* Errors */,
-				7D2EF94D2AF4D8AE00497BD8 /* Authenticators */,
-				7D2EF94F2AF4D8AE00497BD8 /* JsonResolver */,
 				7D2EF9512AF4D8AE00497BD8 /* NetworkManager+Debug.swift */,
-				7D2EF9522AF4D8AE00497BD8 /* Data Providers */,
 				7D2EF9552AF4D8AE00497BD8 /* TargetEndPoint.swift */,
+				7D2EF94D2AF4D8AE00497BD8 /* Authenticators */,
+				7D2EF9522AF4D8AE00497BD8 /* Data Providers */,
+				7D2EF9492AF4D8AE00497BD8 /* Errors */,
+				7D2EF94F2AF4D8AE00497BD8 /* JsonResolver */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -338,6 +350,14 @@
 				7D2EF9792AF52B9800497BD8 /* Response+Extension.swift */,
 			);
 			path = Moya;
+			sourceTree = "<group>";
+		};
+		7D2EF9862AF6262100497BD8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7D2EF9872AF6262100497BD8 /* Mocks.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,12 +445,15 @@
 				7D2EF9852AF52B9800497BD8 /* Response+Extension.swift in Sources */,
 				7D2EF9432AF4D82200497BD8 /* MainScreenInteractor.swift in Sources */,
 				7D2EF9572AF4D8AF00497BD8 /* Networking.swift in Sources */,
+				7D2EF9882AF6262100497BD8 /* Mocks.swift in Sources */,
 				7D2EF9002AF4593F00497BD8 /* AppDelegate.swift in Sources */,
 				7D2EF9602AF4D8AF00497BD8 /* DataProviding.swift in Sources */,
 				7D2EF9022AF4593F00497BD8 /* SceneDelegate.swift in Sources */,
 				7D2EF95F2AF4D8AF00497BD8 /* DataProviders.swift in Sources */,
+				7D2EF98A2AF6263200497BD8 /* DemoService.swift in Sources */,
 				7D2EF9802AF52B9800497BD8 /* Data+Extension.swift in Sources */,
 				7D2EF9812AF52B9800497BD8 /* Array+Extension.swift in Sources */,
+				7D2EF98E2AF6272100497BD8 /* DemoView.swift in Sources */,
 				7D2EF97C2AF52B9800497BD8 /* Error+Extension.swift in Sources */,
 				7D2EF95E2AF4D8AF00497BD8 /* NetworkManager+Debug.swift in Sources */,
 				7D2EF9262AF4D3FD00497BD8 /* Interactor.swift in Sources */,
@@ -440,6 +463,7 @@
 				7D2EF9822AF52B9800497BD8 /* UIWindow+Extension.swift in Sources */,
 				7D2EF92A2AF4D3FD00497BD8 /* AppCoordinator.swift in Sources */,
 				7D2EF9422AF4D82200497BD8 /* MainScreenViewController.swift in Sources */,
+				7D2EF98C2AF6264100497BD8 /* DemoModel.swift in Sources */,
 				7D2EF97F2AF52B9800497BD8 /* String+Extension.swift in Sources */,
 				7D2EF9582AF4D8AF00497BD8 /* NetworkManager.swift in Sources */,
 				7D2EF92C2AF4D40E00497BD8 /* AppController.swift in Sources */,
