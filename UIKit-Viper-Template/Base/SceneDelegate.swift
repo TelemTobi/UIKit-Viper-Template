@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  UIKit-Viper-Template
-//
-//  Created by Telem Tobi on 03/11/2023.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

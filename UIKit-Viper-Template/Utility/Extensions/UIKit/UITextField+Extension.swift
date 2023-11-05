@@ -1,10 +1,3 @@
-//
-//  UITextField+Extension.swift
-//  PepperAssignment
-//
-//  Created by Telem Tobi on 18/03/2023.
-//
-
 import UIKit
 import Combine
 
