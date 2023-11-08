@@ -58,6 +58,9 @@ protocol Coordinator: AnyObject {
 - `didTapCloseButton()` handles the action when a close button is tapped and should conclude the flow.
 - `didTapBackButton()` handles the action when a back button is tapped and should navigate back to the previous ViewController.
 
+**The Coordinator protocol also includes several convenient methods with default implementations.<br/>
+Be sure to explore them for additional insights and efficiency!**
+<br/><br/>
 Your project can incorporate as many coordinators as needed, with each coordinator managing a complete flow within your application.
 
 <br/>
