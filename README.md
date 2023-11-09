@@ -67,4 +67,61 @@ Your project can incorporate as many coordinators as needed, with each coordinat
 
 ## Networking
 
-TBD
+The networking layer in this template harnesses the power of the Moya package.<br/>
+The fundamental concept behind Moya is to provide a network abstraction layer that effectively encapsulates the direct invocation of Alamofire. It aims to be simple for common tasks yet comprehensive enough to handle more intricate scenarios.
+
+Key Features of Moya:
+
+- Compile-time checking for correct API endpoint accesses.
+- Clear definition of different endpoints with associated enum values.
+- First-class treatment of test stubs for seamless unit testing.
+
+Networkin components:
+
+### EndPoints
+Each networking API has its dedicated Endpoints file, defining request requirements such as base URL, path, HTTP method, headers, query parameters, body, and more.<br/>
+The **Endpoints** enum should conform to `TargetTypeEndPoint` for additional decoding strategies and stubbing options.
+
+### DataProvider
+For each `Endpoints` file, there should be a corresponding **DataProvider** file that accesses the `NetworkManager` and makes requests with all relevant endpoints.<br/>
+The **DataProvider** also has access to the `AppData` in case any app-related data needs updating.
+
+### Authenticator
+The **Authenticator** class conforms to the `Authentication` protocol, defined as follows:
+```swift
+protocol Authenticating {
+    var accessKey: String? { get }
+    var authState: AuthState { get }
+
+    // Can be used to asynchronously authenticate the user
+    func authenticate(with completion: @escaping SuccessCompletion) throws
+    
+    // Can be used to map the endpoint right before the request is excecuted
+    func mapEndpoint(_ endpoint: Endpoint, for target: TargetTypeEndPoint) -> Endpoint
+}
+```
+Feel free to customize the protocol to suit the needs of the API you're consuming.<br/>
+The `mapEndpoints` method can be used to modify the request, such as adding global headers, for example.
+
+### JsonResolver
+Every response struct we decode should conform to the **JsonResolver** protocol or a sub-protocol overriding the default resolve implementation.<br/>
+The protocol is defined as follows:
+```swift
+protocol JsonResolver {
+    static func resolve(_ data: Data) throws -> Data
+}
+
+extension JsonResolver {
+    static func resolve(_ data: Data) throws -> Data { data }
+}
+```
+The resolver provides a way to modify our response JSON before it's decoded into our model, allowing us to manipulate the data to fit our needs.
+
+### NetworkManager
+The **NetworkManager** is where the heavy lifting of networking occurs. It houses the `Authenticator` and a `MoyaProvider` to perform requests.<br/>
+The primary method we interact with is the `request` method:
+```swift
+func request<T, F: Errorable>(_ endpoint: EndPoint, completion: @escaping (Result<T, F>) -> Void) where T: Decodable, T: JsonResolver
+```
+This method accepts an `EndPoint` to build the request and a completion handler to call when the request completes.<br/>
+The response type should conform to `Decodable` and `JsonResolver`, and the error type should conform to `Errorable`.
