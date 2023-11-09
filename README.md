@@ -67,7 +67,7 @@ Your project can incorporate as many coordinators as needed, with each coordinat
 
 ## Networking
 
-The networking layer in this template harnesses the power of the Moya package.<br/>
+The networking layer in this template harnesses the power of the [Moya](https://github.com/Moya/Moya) package.<br/>
 The fundamental concept behind Moya is to provide a network abstraction layer that effectively encapsulates the direct invocation of Alamofire. It aims to be simple for common tasks yet comprehensive enough to handle more intricate scenarios.
 
 Key Features of Moya:
