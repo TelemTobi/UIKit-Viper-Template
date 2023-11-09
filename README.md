@@ -76,7 +76,7 @@ Key Features of Moya:
 - Clear definition of different endpoints with associated enum values.
 - First-class treatment of test stubs for seamless unit testing.
 
-Networkin components:
+<br/>
 
 ### EndPoints
 Each networking API has its dedicated Endpoints file, defining request requirements such as base URL, path, HTTP method, headers, query parameters, body, and more.<br/>
